@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"receipt_processor/models"
+	"github.com/rebeccastewartarcherdx/receipt-processor/models"
 
 	"encoding/json"
 

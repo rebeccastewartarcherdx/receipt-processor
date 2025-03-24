@@ -1,9 +1,10 @@
 package controller
 
 import (
-	"receipt_processor/models"
 	"testing"
 	"time"
+
+	"github.com/rebeccastewartarcherdx/receipt-processor/models"
 )
 
 func Test_convertToCents(t *testing.T) {

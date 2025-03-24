@@ -2,8 +2,9 @@ package handler
 
 import (
 	"fmt"
-	"receipt_processor/controller"
-	"receipt_processor/models"
+
+	"github.com/rebeccastewartarcherdx/receipt-processor/controller"
+	"github.com/rebeccastewartarcherdx/receipt-processor/models"
 
 	"github.com/labstack/echo/v4"
 )

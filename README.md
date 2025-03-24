@@ -3,7 +3,7 @@
 A simple http service that will process and calculate points for a receipt.
 
 ## How to Run
-Clone the repo, then when in `receipt-processor`, run `go run .` in your terminal. This will start the server at `localhost:6790`. Note this can be modified in `main.go`.
+Clone the repo, then when in `receipt-processor`, run `go run .` in your terminal. This assumes you have go version 1.24 installed, this can be modified in `go.mod`. This will start the server at `localhost:6790`. Note this port can be modified in `main.go`.
 
 To run tests, run `go test ./...` in your terminal.
 

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"receipt_processor/controller"
-	"receipt_processor/dao"
-	"receipt_processor/handler"
+	"github.com/rebeccastewartarcherdx/receipt-processor/controller"
+	"github.com/rebeccastewartarcherdx/receipt-processor/dao"
+	"github.com/rebeccastewartarcherdx/receipt-processor/handler"
 
 	"github.com/labstack/echo/v4"
 	"github.com/tidwall/buntdb"
@@ -13,6 +13,8 @@ var (
 	d dao.ReceiptDao
 	c controller.Processor
 	h handler.ReceiptHandler
+
+	port = "localhost:6790"
 )
 
 func main() {
@@ -28,7 +30,7 @@ func main() {
 
 	e.POST("/receipts/process", h.ProcessReceipt)
 	e.GET("/receipts/:id/points", h.GetPoints)
-	if err = e.Start("localhost:6790"); err != nil {
+	if err = e.Start(port); err != nil {
 		e.Logger.Fatal(err)
 	}
 }

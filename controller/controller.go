@@ -3,13 +3,14 @@ package controller
 import (
 	"context"
 	"math"
-	"receipt_processor/dao"
-	"receipt_processor/models"
 	"strconv"
 	"strings"
 	"time"
 	"unicode"
 	"unicode/utf8"
+
+	"github.com/rebeccastewartarcherdx/receipt-processor/dao"
+	"github.com/rebeccastewartarcherdx/receipt-processor/models"
 )
 
 type (

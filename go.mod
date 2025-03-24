@@ -1,4 +1,4 @@
-module receipt_processor
+module github.com/rebeccastewartarcherdx/receipt-processor
 
 go 1.24.1
 
